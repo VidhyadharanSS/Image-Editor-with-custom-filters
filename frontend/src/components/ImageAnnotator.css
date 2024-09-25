@@ -1,0 +1,128 @@
+/* Container styles */
+.annotate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #fffbf0, #ffe0e0);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background 0.5s ease;
+  }
+  
+  .annotate-container:hover {
+    background: linear-gradient(135deg, #f0fff4, #e0f7fa);
+  }
+  
+  /* Image container styles */
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Split screen layout */
+  .split-screen {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+  }
+  
+  /* Original and processed image containers */
+  .original-image-container,
+  .processed-image-container {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .original-image-container:hover,
+  .processed-image-container:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styles */
+  .original-image,
+  .annotated-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Annotations section */
+  .annotations {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Input styles */
+  input[type="text"],
+  input[type="number"],
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    border-color: #007bff;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Progress bar styles */
+  .rotation-progress,
+  .loading-bar {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .rotation-progress {
+    background-color: #f3f3f3;
+  }
+  
+  .rotation-progress::-webkit-progress-value {
+    background-color: #007bff;
+  }
+  
+  .loading-bar {
+    background-color: #007bff;
+  }
+  
+  .loading-bar::-webkit-progress-value {
+    background-color: #28a745; /* Green color for loading */
+  }
+  

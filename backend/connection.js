@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const db = "IMAGEEDITOR";
-const dbUrl = `mongodb+srv://SUDHANSHU:Sudh2002@cluster0.6wqffyv.mongodb.net/${db}?retryWrites=true&w=majority`;
+const dbUrl = `mongodb://localhost:27017/Hash2`;
 
 //Asynchronous Function - returns promise
 mongoose

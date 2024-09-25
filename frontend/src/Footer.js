@@ -13,13 +13,13 @@ const Footer = () => {
             <section className="mb-4">
               {/* Linkedin */}
               <a
-                href="https://www.linkedin.com/in/sudhanshu-singh-926391213/"
+                href=""
                 className="btn  text-center btn-floating m-1 "
               >
                 <i className="fab fa-linkedin-in"></i>{" "}
               </a>
               <a
-                href="https://github.com/Sudhanshusingh705"
+                href="https://github.com/VidhyadharanSS"
                 className="btn  text-center btn-floating m-1 "
               >
                 <i className="fab fa-github" />
@@ -28,7 +28,7 @@ const Footer = () => {
             {/* Section: Social media */}
             {/* Section: Text */}
             <section className="mb-4">
-              <p>Created by ❤</p>
+              <p>IMAGER ML </p>
             </section>
           </div>
           {/* Grid container */}
@@ -37,12 +37,12 @@ const Footer = () => {
             className="text-center p-3"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
           >
-            © 2022 Copyright:
+            
             <a
               className="text-dark"
-              href="https://www.linkedin.com/in/sudhanshu-singh-926391213/"
+              href="https://www.linkedin.com"
             >
-              @SUDHANSHU SINGH
+              VIDHYA DHARAN 
             </a>
           </div>
           {/* Copyright */}

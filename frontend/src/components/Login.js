@@ -39,8 +39,7 @@ const Login = () => {
         <div
           className="p-5 bg-image"
           style={{
-            backgroundImage: `
-                url("https://mdbootstrap.com/img/new/textures/full/171.jpg")`,
+            
             height: 300,
           }}
         />

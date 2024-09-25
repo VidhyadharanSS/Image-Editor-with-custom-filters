@@ -1,0 +1,67 @@
+/* General styling for the app */
+.App {
+    font-family: Arial, sans-serif; /* Use a clean font for readability */
+    background-color: #f8f9fa; /* Light background color for better contrast */
+    padding: 20px; /* Add padding around the app */
+}
+
+/* Container styling */
+.container {
+    margin-top: 30px; /* Add margin above the container */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* Styling for the card */
+.card {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    margin: 15px; /* Add margin around the cards for spacing */
+}
+
+/* Add hover effect on the card */
+.card:hover {
+    transform: scale(1.02); /* Slightly enlarge the card on hover */
+}
+
+/* Styling for card titles */
+.card-title {
+    font-weight: bold; /* Make card titles bold */
+    font-size: 1.25rem; /* Increase the font size */
+    color: #6c757d; /* Use a muted color for titles */
+}
+
+/* Styling for card text */
+.card-text {
+    color: #555; /* Set a softer color for the text */
+    line-height: 1.6; /* Improve line spacing for better readability */
+}
+
+/* Customize the heading */
+.head1 {
+    font-size: 2.5rem; /* Increase the font size of the heading */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add margin below the heading */
+    text-transform: uppercase; /* Make the heading uppercase */
+}
+
+/* Add styling for the horizontal line */
+hr {
+    border-top: 2px solid rosybrown; /* Change color of the horizontal line */
+    width: 50%; /* Set a fixed width for the line */
+    margin: 20px auto; /* Center the line */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; /* Add margin for smaller screens */
+    }
+
+    .head1 {
+        font-size: 2rem; /* Reduce heading size for smaller screens */
+    }
+}

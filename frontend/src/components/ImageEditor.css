@@ -1,15 +1,54 @@
+/* Styles for the filter list */
 .filterlist {
-    overflow: scroll;
+    overflow-y: auto; /* Vertical scroll */
     z-index: 1;
-    height: 100vh;
+    height: 100vh; /* Full height */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #dcdcdc; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 15px; /* Padding for spacing */
+    font-family: 'Arial', sans-serif; /* Font style */
 }
 
-.editor-image{
-    height: 80vh;
-    background-size: contain;
-    background-position: cover;
-    overflow: scroll;
-
+/* Styles for the editor image container */
+.editor-image {
+    height: 80vh; /* 80% of viewport height */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background */
+    overflow: scroll; /* Enable scrolling */
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light grey background */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
+/* Optional: If you want to add a loading or placeholder text */
+.editor-image::before {
+    content: "Loading..."; /* Placeholder text */
+    color: #3498db; /* Blue color for placeholder */
+    font-size: 1.5em; /* Larger text size */
+    font-weight: bold; /* Bold text */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+}
 
+/* Scrollbar styles */
+.filterlist::-webkit-scrollbar {
+    width: 8px; /* Width of scrollbar */
+}
+
+.filterlist::-webkit-scrollbar-thumb {
+    background: #3498db; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded scrollbar thumb */
+}
+
+.filterlist::-webkit-scrollbar-track {
+    background: #e0e0e0; /* Color of the scrollbar track */
+}
